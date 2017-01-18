@@ -1,17 +1,26 @@
 {
-  "name": "projects",
-  "version": "1.0.0",
-  "description": "",
+  "name": "correios-tracking",
+  "version": "0.1.0",
+  "description": "A simple tracking API for Correios",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipelinhares/correios-tracking.git"
+  },
+  "homepage": "https://github.com/filipelinhares/correios-tracking#readme",
+  "keywords": ["correios"],
+  "author": "Filipe Linhares <lip.linhares@gmail.com> (http://filipelinhares.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filipelinhares/correios-tracking/issues"
+  },
   "scripts": {
     "start": "micro",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["correios"],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "micro": "^6.2.0",
     "tracking-correios": "^1.0.7"
   }
 }
+
