@@ -1,6 +1,6 @@
 {
   "name": "correios-tracking",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple tracking API for Correios",
   "main": "index.js",
   "repository": {
@@ -21,6 +21,13 @@
   "dependencies": {
     "micro": "^6.2.0",
     "tracking-correios": "^1.0.7"
+  },
+  "now": {
+    "name": "correios-tracking",
+    "alias": "correios-tracking.now.sh",
+    "engines": {
+      "node": "7.4.0"
+    }
   }
 }
 
