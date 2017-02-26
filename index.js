@@ -3,12 +3,9 @@ const TrackingCorreios = require('tracking-correios')
 const url = require('url')
 
 
-module.exports = function (req, res) {
+module.exports = async function (req, res) {
   const { pathname } = url.parse(req.url)
   const code = pathname.replace('/', '').toUpperCase()
 
-  return TrackingCorreios.track( code )
-    .then(function (data) {
-      return data;
-    })
+  return await TrackingCorreios.track(code)
 }
