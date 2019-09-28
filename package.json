@@ -8,7 +8,9 @@
     "url": "git+https://github.com/filipelinhares/correios-tracking.git"
   },
   "homepage": "https://github.com/filipelinhares/correios-tracking#readme",
-  "keywords": ["correios"],
+  "keywords": [
+    "correios"
+  ],
   "author": "Filipe Linhares <lip.linhares@gmail.com> (http://filipelinhares.com)",
   "license": "MIT",
   "bugs": {
@@ -19,8 +21,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "micro": "^6.2.0",
-    "tracking-correios": "^1.0.7"
+    "micro": "^9.3.4",
+    "rastrojs": "^1.0.3"
   },
   "now": {
     "name": "correios-tracking",
@@ -30,4 +32,3 @@
     }
   }
 }
-
