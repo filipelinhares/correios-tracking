@@ -2,7 +2,7 @@
   "name": "correios-tracking",
   "version": "0.3.0",
   "description": "A simple tracking API for Correios",
-  "main": "index.js",
+  "main": "api/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/filipelinhares/correios-tracking.git"
@@ -17,18 +17,12 @@
     "url": "https://github.com/filipelinhares/correios-tracking/issues"
   },
   "scripts": {
-    "start": "micro",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "micro": "^9.3.4",
     "rastrojs": "^1.0.3"
   },
-  "now": {
-    "name": "correios-tracking",
-    "alias": "correios-tracking.now.sh",
-    "engines": {
-      "node": "10.x"
-    }
+  "engines": {
+    "node": "10.x"
   }
 }
