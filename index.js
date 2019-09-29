@@ -7,11 +7,16 @@ const capitalize = s => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
-module.exports = async function(req, res) {
+module.exports = async (req, res) => {
   const { pathname } = url.parse(req.url);
   const code = pathname.replace('/', '').toUpperCase();
+  let result;
 
-  const [result] = await rastro.track(code);
+  try {
+    [result] = await rastro.track(code);
+  } catch (error) {
+    return micro.send(res, 400, { message: 'Error when requesting to the Correios service' })
+  }
 
   result.tracks = result.tracks.map(
     ({ locale, status, trackedAt, observation, ...rest }) => {
